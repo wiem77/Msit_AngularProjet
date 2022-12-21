@@ -1,7 +1,13 @@
+<nav class="navbar sticky-top navbar-dark bg-dark h-100">
+  <div class="container-fluid">
+    <a class="navbar-brand mx-auto" href="#">Users Management System</a>
+  </div>
+</nav>
 <div class="container mt-5">
-  <h1>User Mangement</h1>
-  <a routerLink="create" class="btn btn-success">ADD new User</a>
+  <a routerLink="create" class="btn btn-dark">ADD new User</a>
   &nbsp;
-  <a routerLink="read" class="btn btn-success">List Users</a>
-  <router-outlet></router-outlet>
+  <a routerLink="read" class="btn btn-dark">List Users</a>
+  <div class="route">
+    <router-outlet></router-outlet>
+  </div>
 </div>

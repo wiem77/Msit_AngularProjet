@@ -12,6 +12,7 @@ export class CreateComponent implements OnInit {
   
   constructor(private service:ApiserverService, private router:ActivatedRoute){}
   errormsg:any;
+  successmsg:any;
   getparamid:any;
   ngOnInit(): void {
       this.getparamid=this.router.snapshot.paramMap.get('_id');
@@ -51,7 +52,7 @@ export class CreateComponent implements OnInit {
         }
         else{
          this.errormsg='all filed is required';
-          
+        
         }
         
       }
